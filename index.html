@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sana Haryani — Project Manager & HR-IT Consultant</title>
+<meta name="description" content="Sana Haryani — project manager and HR-IT consultant in Berlin. Stakeholder management, SAP SuccessFactors, Jira, M.Sc. Computer Science. Available immediately.">
+<meta property="og:title" content="Sana Haryani — Project Manager & HR-IT Consultant">
+<meta property="og:description" content="Project manager and HR-IT consultant bringing structure to cross-functional work. Available immediately. English & German.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f1e8; --ink:#171717; --muted:#6a655c; --card:#fffdf8;
+  --accent:#d9ff3f; --line:#d7d1c5; --dark:#171717;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+em{font-family:var(--serif);font-style:italic;font-weight:400}
+
+/* NAV */
+.bar{position:sticky;top:0;z-index:50;background:rgba(245,241,232,.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;height:68px;font-size:14px}
+.logo{font-family:var(--serif);font-size:30px;line-height:1;letter-spacing:-.02em}
+.logo i{color:var(--ink);background:var(--accent);font-style:normal;padding:0 .12em;margin-left:2px}
+.navright{display:flex;align-items:center;gap:28px}
+.navlinks{display:flex;gap:26px;color:var(--muted)}
+.navlinks a{transition:color .15s}.navlinks a:hover{color:var(--ink)}
+.lang{display:inline-flex;background:var(--card);border:1px solid var(--ink);border-radius:100px;padding:3px;gap:2px}
+.lang button{font:inherit;font-size:12px;font-weight:800;letter-spacing:.08em;border:0;background:transparent;color:var(--ink);padding:7px 13px;border-radius:100px;cursor:pointer;transition:background .2s}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--accent)}
+.lang button:not([aria-pressed="true"]):hover{background:var(--accent)}
+
+/* HERO */
+.hero{padding:56px 0 0}
+.hero-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.hero-top .live::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb344;margin-right:9px;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,179,68,.5)}70%{box-shadow:0 0 0 8px rgba(47,179,68,0)}100%{box-shadow:0 0 0 0 rgba(47,179,68,0)}}
+.hero-main{display:grid;grid-template-columns:1.5fr .8fr;gap:64px;align-items:stretch;padding:52px 0 56px}
+h1{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(84px,14.5vw,208px);line-height:.8;letter-spacing:-.045em}
+h1 span{display:block}
+h1 .hl{font-style:italic;padding-right:.06em;background:linear-gradient(transparent 64%,var(--accent) 64% 90%,transparent 90%);display:inline-block}
+.role-line{margin:38px 0 0;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--ink)}
+.role-line i{font-style:normal;color:var(--muted);margin:0 8px}
+.lead{font-family:var(--serif);font-size:clamp(25px,2.6vw,34px);line-height:1.2;letter-spacing:-.01em;max-width:620px;margin:20px 0 0;color:#2b2925}
+.btns{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:100px;font-weight:700;font-size:15px;border:1.5px solid var(--ink);transition:transform .15s,box-shadow .15s,background .15s;background:transparent;color:var(--ink);font-family:inherit;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--accent)}
+.btn:hover{transform:translateY(-2px);box-shadow:4px 4px 0 var(--accent)}
+.btn.primary:hover{box-shadow:4px 4px 0 var(--ink);background:var(--accent);color:var(--ink)}
+
+/* hero video card */
+.vcard{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:420px;padding:26px;border-radius:6px;color:#fff;overflow:hidden;border:1.5px solid var(--ink);box-shadow:10px 10px 0 var(--accent);
+  background:radial-gradient(120% 80% at 85% 0%,rgba(217,255,63,.28),transparent 55%),radial-gradient(90% 70% at 0% 100%,rgba(255,255,255,.08),transparent 60%),#171717;transition:transform .25s,box-shadow .25s}
+.vcard:hover{transform:translate(-3px,-3px);box-shadow:14px 14px 0 var(--accent)}
+.vcard .vt{display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#bbb;font-weight:600}
+.vcard .vt b{border:1px solid #555;border-radius:100px;padding:4px 10px;color:#fff;font-weight:700;letter-spacing:.1em}
+.vcard .play{width:84px;height:84px;border-radius:50%;background:var(--accent);color:var(--ink);display:grid;place-items:center;font-size:30px;padding-left:6px;margin:auto;transition:transform .25s}
+.vcard:hover .play{transform:scale(1.08)}
+.vcard h2{margin:0;font-family:var(--serif);font-weight:400;font-size:clamp(38px,4vw,52px);line-height:.98;letter-spacing:-.02em}
+.vcard h2 em{color:var(--accent)}
+.vcard small{display:block;margin-top:10px;color:#aaa;font-size:14px}
+
+/* facts */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--line)}
+.fact{padding:26px 24px 28px 0}
+.fact+.fact{padding-left:24px;border-left:1px solid var(--line)}
+.fact .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.fact b{display:block;margin-top:10px;font-family:var(--serif);font-weight:400;font-size:27px;line-height:1.1;letter-spacing:-.01em}
+.fact span{display:block;margin-top:6px;font-size:13.5px;color:var(--muted)}
+
+/* SECTIONS */
+section{padding:100px 0;border-top:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns:.35fr 1fr;gap:60px;margin-bottom:50px}
+.section-num{font-size:12px;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;padding-top:16px;font-weight:600}
+.section-title{font-family:var(--serif);font-weight:400;font-size:clamp(46px,6vw,86px);letter-spacing:-.03em;line-height:.93;margin:0}
+.section-title em{color:#000}
+.about{font-size:25px;letter-spacing:-.02em;max-width:880px;margin:0;line-height:1.4}
+.about strong{background:var(--accent);padding:0 .08em;font-weight:600}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:64px;border-top:1px solid var(--ink)}
+.pillar{padding:26px 28px 0 0}
+.pillar+.pillar{padding-left:28px;border-left:1px solid var(--line)}
+.pillar .n{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--muted)}
+.pillar h3{font-family:var(--serif);font-weight:400;font-size:36px;letter-spacing:-.02em;margin:6px 0 10px;line-height:1}
+.pillar p{margin:0;color:#4d493f;font-size:16px}
+
+/* VIDEO */
+.video-sec{background:var(--card)}
+.video-grid{display:grid;grid-template-columns:.35fr 1fr;gap:60px}
+.video-side p{color:#403d37;font-size:17px;margin:0 0 22px}
+.vtabs{display:flex;gap:8px;flex-wrap:wrap}
+.vtab{font:inherit;font-size:14px;font-weight:700;border:1.5px solid var(--ink);background:transparent;border-radius:100px;padding:10px 16px;cursor:pointer;transition:.15s;color:var(--ink)}
+.vtab[aria-pressed="true"]{background:var(--ink);color:var(--accent)}
+.vtab:not([aria-pressed="true"]):hover{background:var(--accent)}
+.player{position:relative;background:var(--ink);border-radius:6px;overflow:hidden;aspect-ratio:16/9;box-shadow:12px 12px 0 var(--accent);border:1.5px solid var(--ink)}
+.player video{width:100%;height:100%;display:block;object-fit:cover;background:#000}
+.soon{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#fff;text-align:center;padding:24px;background:repeating-linear-gradient(135deg,#171717 0 14px,#1d1d1d 14px 28px)}
+.soon.show{display:flex}
+.soon .ring{width:76px;height:76px;border-radius:50%;background:var(--accent);color:var(--ink);display:grid;place-items:center;font-size:28px;padding-left:5px}
+.soon b{font-family:var(--serif);font-weight:400;font-size:30px}
+.soon span{color:#aaa;font-size:14px}
+.vcap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:24px;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+
+/* CARDS */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);padding:32px;min-height:290px;display:flex;flex-direction:column;justify-content:space-between;gap:28px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-5px);box-shadow:8px 8px 0 var(--dark)}
+.card-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.tag{font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);font-weight:600}
+.idx{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--muted)}
+.card h3{font-family:var(--serif);font-weight:400;font-size:36px;letter-spacing:-.02em;line-height:1;margin:0 0 14px}
+.card p{color:#555047;max-width:560px;margin:0}
+.card.small{min-height:0;padding:26px}
+.card.small h3{font-size:30px}
+
+/* EXPERIENCE */
+.subhead{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 6px;padding-bottom:14px;border-bottom:1px solid var(--ink)}
+.subhead.gap{margin-top:70px}
+.experience{display:grid;grid-template-columns:1fr 2fr;gap:50px;padding:34px 0;border-top:1px solid var(--line)}
+.subhead+.experience{border-top:0}
+.role{font-family:var(--serif);font-size:32px;letter-spacing:-.015em;line-height:1.08}
+.company{color:var(--ink);margin-top:8px;font-weight:600;font-size:15px}
+.date{font-size:13px;color:var(--muted);margin-top:4px;letter-spacing:.04em}
+.experience ul{margin:0;padding-left:20px;color:#504b44}
+.experience li{margin:9px 0}
+.experience li:first-child{margin-top:0}
+
+/* SKILLS */
+.skillgroups{display:grid;gap:34px}
+.sg{display:grid;grid-template-columns:.35fr 1fr;gap:60px;align-items:start}
+.sg h3{margin:6px 0 0;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{border:1.5px solid var(--ink);border-radius:100px;padding:9px 17px;font-size:15px;font-weight:600;transition:.15s;background:transparent}
+.skills span:hover{background:var(--accent)}
+
+/* ABOUT centred */
+#about .section-head{grid-template-columns:1fr;text-align:center;gap:14px}
+#about .section-num{padding-top:0}
+#about .about{margin:0 auto;text-align:center;max-width:900px}
+.subhead+.grid{margin-top:22px}
+.ghline{margin:34px 0 0}
+.ghline a{display:inline-block;font-weight:700;border-bottom:2px solid var(--accent);padding-bottom:2px}
+.ghline a:hover{background:var(--accent)}
+
+.intro{font-size:20px;color:#403d37;max-width:760px;margin:0 0 40px;letter-spacing:-.01em}
+.note{margin-top:22px!important;font-size:14px!important;color:#888!important;letter-spacing:.02em}
+
+.grid.three{grid-template-columns:repeat(3,1fr)}
+.grid.three .card{min-height:260px;padding:28px}
+.grid.three .card h3{font-size:31px}
+.feature{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;background:var(--card);border:1.5px solid var(--ink);padding:38px;margin-bottom:18px;box-shadow:9px 9px 0 var(--accent)}
+.feature h3{font-family:var(--serif);font-weight:400;font-size:clamp(38px,4.4vw,56px);letter-spacing:-.02em;line-height:1;margin:18px 0 16px}
+.feature p{margin:0 0 14px;color:#4d493f}
+.feature p.ethics{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:6px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 26px;counter-reset:s;align-content:start}
+.steps li{counter-increment:s;padding:13px 0;border-top:1px solid var(--line);font-size:15px;display:flex;gap:12px;line-height:1.35}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--serif);font-style:italic;color:var(--muted);font-size:18px;line-height:1.1}
+
+/* CONTACT */
+.contact{background:var(--dark);color:#fff;padding:110px 0;border-top:0}
+.contact .section-num{color:#aaa;padding:0 0 22px}
+.contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(58px,9vw,126px);line-height:.88;letter-spacing:-.035em;margin:0 0 35px}
+.contact h2 em{color:var(--accent)}
+.contact p{color:#bbb;font-size:18px;max-width:570px;margin:0}
+.links{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.links a{padding:15px 22px;font-weight:700;border-radius:100px;border:1.5px solid #555;transition:.15s}
+.links a.cta{background:var(--accent);color:var(--dark);border-color:var(--accent)}
+.links a:hover{transform:translateY(-2px);border-color:var(--accent)}
+footer{background:var(--dark);color:#888;padding:25px 0;border-top:1px solid #333;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* REVEAL */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .hero-top .live::before{animation:none}.card,.btn,.vcard,.vcard .play{transition:none}
+}
+
+@media(max-width:900px){
+  .hero{padding-top:34px}
+  .hero-main{grid-template-columns:1fr;gap:44px;padding:40px 0 46px}
+  .vcard{min-height:300px}
+  .facts{grid-template-columns:1fr 1fr}
+  .fact,.fact+.fact{padding:22px 16px 22px 0;border-left:0}
+  .fact:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
+  .fact:nth-child(n+3){border-top:1px solid var(--line)}
+  .section-head,.experience,.video-grid,.sg{grid-template-columns:1fr}
+  .section-head{gap:14px}.section-num{padding-top:0}
+  .video-grid{gap:30px}.sg{gap:14px}
+  .grid,.grid.three{grid-template-columns:1fr}
+  .feature{grid-template-columns:1fr;gap:26px;padding:26px;box-shadow:6px 6px 0 var(--accent)}
+  .steps{grid-template-columns:1fr}
+  .navlinks{display:none}
+  section{padding:70px 0}
+  .pillars{grid-template-columns:1fr;margin-top:44px}
+  .pillar,.pillar+.pillar{padding:24px 0;border-left:0}
+  .pillar+.pillar{border-top:1px solid var(--line)}
+  .experience{gap:16px}
+  .player,.vcard{box-shadow:7px 7px 0 var(--accent)}
+}
+@media(max-width:480px){ .facts{grid-template-columns:1fr} .fact:nth-child(even){padding-left:0;border-left:0} .fact+.fact{border-top:1px solid var(--line)} .fact{padding-right:0} }
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<div class="bar">
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="logo" href="#top" aria-label="Sana Haryani">S<i>H</i></a>
+      <div class="navright">
+        <div class="navlinks">
+          <a href="#about" data-i18n="nav_about">About</a>
+          <a href="#video" data-i18n="nav_video">Video</a>
+          <a href="#work" data-i18n="nav_work">Work</a>
+          <a href="#experience" data-i18n="nav_exp">Experience</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+        <div class="lang" role="group" aria-label="Language / Sprache">
+          <button type="button" data-lang="en" aria-pressed="true" lang="en" title="English">EN</button>
+          <button type="button" data-lang="de" aria-pressed="false" lang="de" title="Deutsch">DE</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<main id="main">
+<div class="wrap" id="top">
+  <header class="hero">
+    <div class="hero-top">
+      <span data-i18n="ht_l">Portfolio · 2026</span>
+      <span data-i18n="ht_m">Berlin · Germany</span>
+      <span class="live" data-i18n="ht_r">Available immediately</span>
+    </div>
+
+    <div class="hero-main">
+      <div>
+        <h1><span>Sana</span><span class="hl">Haryani</span></h1>
+        <p class="role-line"><span data-i18n="r1">Project Management</span><i>/</i><span data-i18n="r2">HR-IT Consulting</span><i>/</i><span data-i18n="r3">Operations</span></p>
+        <p class="lead" data-i18n="lead">Project manager and HR-IT consultant — I bring structure to complex, cross-functional work, from requirements to delivery, backed by an M.Sc. in Computer Science.</p>
+        <div class="btns">
+          <a class="btn primary" href="#contact" data-i18n="btn_talk">Get in touch</a>
+          <a class="btn" id="cvbtn" href="cv/Sana-Haryani-CV.pdf" download hidden data-i18n="btn_cv">Download CV</a>
+        </div>
+      </div>
+
+      <a class="vcard" href="#video" aria-label="Watch my intro video">
+        <div class="vt"><span data-i18n="hc_tag">Intro video</span><b>EN · DE</b></div>
+        <div class="play" aria-hidden="true">▶</div>
+        <div>
+          <h2 data-i18n-html="hc_title">Hear it<br><em>from me.</em></h2>
+          <small data-i18n="hc_sub">My experience, in English or German.</small>
+        </div>
+      </a>
+    </div>
+
+    <div class="facts reveal">
+      <div class="fact"><div class="k" data-i18n="f1k">Availability</div><b data-i18n="f1v">Immediately</b><span data-i18n="f1s">Job-seeker visa · Berlin</span></div>
+      <div class="fact"><div class="k" data-i18n="f2k">Focus</div><b data-i18n="f2v">Project Management</b><span data-i18n="f2s">HR-IT · Stakeholders · Cross-functional delivery</span></div>
+      <div class="fact"><div class="k" data-i18n="f3k">Education</div><b data-i18n="f3v">M.Sc. Computer Science</b><span>IU University · Berlin</span></div>
+      <div class="fact"><div class="k" data-i18n="f4k">Languages</div><b data-i18n="f4v">English · German · Hindi</b><span data-i18n="f4s">Fluent · B2.1 · Native</span></div>
+    </div>
+  </header>
+</div>
+
+<section id="about" style="border-top:0">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="section-num" data-i18n="about_num">01 / About</div><h2 class="section-title" data-i18n-html="about_title">Bringing structure<br>to <em>ambiguity.</em></h2></div>
+    <p class="about reveal" data-i18n-html="about_text">I’m a <strong>project manager</strong> who works where business meets technology. At IAV I supported HR-IT systems and served as <strong>Interim Product Owner</strong> for a cross-functional Roles &amp; Permissions initiative. Before that, I <strong>managed client projects</strong> end to end — clients, designers, developers and vendors — building on the project-management foundation from my B.Sc. With an M.Sc. in Computer Science, I understand both the business and the tech side, and I turn requirements into work teams can actually deliver.</p>
+    <div class="pillars reveal">
+      <div class="pillar"><span class="n">i.</span><h3 data-i18n="pl1t">Clarify</h3><p data-i18n="pl1p">Gather requirements, ask the second question, and turn ambiguity into a clear scope.</p></div>
+      <div class="pillar"><span class="n">ii.</span><h3 data-i18n="pl2t">Coordinate</h3><p data-i18n="pl2p">Keep business, HR, IT, vendors and clients aligned — and follow up until it’s done.</p></div>
+      <div class="pillar"><span class="n">iii.</span><h3 data-i18n="pl3t">Deliver</h3><p data-i18n="pl3p">Prioritise, handle change and last-minute surprises, and leave behind clear documentation.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="video" class="video-sec">
+  <div class="wrap">
+    <div class="video-grid">
+      <div class="video-side reveal">
+        <div class="section-num" data-i18n="video_num" style="padding-top:0;margin-bottom:18px">02 / In my own words</div>
+        <h2 class="section-title" style="margin-bottom:24px" data-i18n-html="video_title">Hear it<br><em>from me.</em></h2>
+        <p data-i18n="video_text">A short walk through my experience — in English or German. Pick a language here or use the toggle at the top.</p>
+        <div class="vtabs" role="group" aria-label="Video language">
+          <button type="button" class="vtab" data-lang="en" aria-pressed="true">English</button>
+          <button type="button" class="vtab" data-lang="de" aria-pressed="false">Deutsch</button>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="player">
+          <video id="intro" controls playsinline preload="metadata" aria-label="Introduction video">
+            <track id="trk" kind="captions" srclang="en" label="English" default>
+          </video>
+          <div class="soon" id="soon" role="status">
+            <div class="ring" aria-hidden="true">▶</div>
+            <b data-i18n="soon_t">Video coming soon</b>
+            <span data-i18n="soon_s">I’m recording this one — check back shortly.</span>
+          </div>
+        </div>
+        <div class="vcap"><span id="vnow">Now showing: English</span><span data-i18n="vtip">Captions available when added</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="section-num" data-i18n="work_num">03 / Selected work</div><h2 class="section-title" data-i18n-html="work_title">Projects I’ve<br><em>owned &amp; delivered.</em></h2></div>
+
+    <h3 class="subhead" data-i18n="sub_prof">Professional</h3>
+    <div class="grid three">
+      <article class="card reveal"><div class="card-top"><span class="tag" data-i18n="p1_tag">Interim Product Owner · IAV</span><span class="idx">01</span></div><div><h3 data-i18n="p1_title">Roles &amp; Permissions Initiative</h3><p data-i18n="p1_text">Coordinated requirements and activities across HR modules and stakeholders in a cross-functional initiative — turning needs into structured, deliverable tasks and keeping every open topic moving.</p></div></article>
+      <article class="card reveal"><div class="card-top"><span class="tag" data-i18n="p2_tag">HR-IT · IAV</span><span class="idx">02</span></div><div><h3 data-i18n="p2_title">Business Process Automation</h3><p data-i18n="p2_text">Analysed SAP SuccessFactors business-rule processes, then helped build, test and document automations that replaced repetitive manual work — improving consistency and maintainability.</p></div></article>
+      <article class="card reveal"><div class="card-top"><span class="tag" data-i18n="p3_tag">Project Management · Eventz &amp; Trendz</span><span class="idx">03</span></div><div><h3 data-i18n="p3_title">Client Projects, Start to Finish</h3><p data-i18n="p3_text">Single point of contact between clients, designers, developers and vendors — from first requirements through planning and delivery, handling changes and feedback along the way.</p></div></article>
+    </div>
+
+    <h3 class="subhead gap" data-i18n="sub_msc">Master’s · IU University</h3>
+    <div class="grid">
+      <article class="card reveal"><div class="card-top"><span class="tag" data-i18n="a4_tag">M.Sc. Thesis · AI</span><span class="idx">04</span></div><div><h3 data-i18n="a4_title">AI-Based Sprint Planning &amp; Burnout Prediction</h3><p data-i18n="a4_text">A concept for an AI-based system supporting sprint planning and burnout prediction in agile project management, using Python and Explainable AI (SHAP).</p></div></article>
+      <article class="card reveal"><div class="card-top"><span class="tag" data-i18n="a3_tag">Project · M.Sc.</span><span class="idx">05</span></div><div><h3>SkillSwap</h3><p data-i18n="a3_text">Implemented SkillSwap, a platform that lets users exchange skills with each other — from analysis and modelling through to a working application.</p></div></article>
+    </div>
+
+    <h3 class="subhead gap" data-i18n="sub_bsc">Bachelor’s · University of Bolton</h3>
+    <div class="grid">
+      <article class="card reveal"><div class="card-top"><span class="tag" data-i18n="a1_tag">B.Sc. Thesis · Security</span><span class="idx">06</span></div><div><h3 data-i18n="a1_title">Secure System for Pan Gulf</h3><p data-i18n="a1_text">Developed a security system combining cryptography and steganography for Pan Gulf, a company in Saudi Arabia — delivered as my bachelor’s thesis.</p></div></article>
+      <article class="card reveal"><div class="card-top"><span class="tag" data-i18n="a2_tag">Project · B.Sc.</span><span class="idx">07</span></div><div><h3>Art Geniuses</h3><p data-i18n="a2_text">A website for art lovers, taken from proposal and feasibility through surveys, interviews and literature review, analysis, risk and quality assessment, ERD, use case and DFD diagrams, implementation and testing — closing with recommendations for future work.</p></div></article>
+    </div>
+    <p class="ghline reveal" id="ghline" hidden><a id="ghlink" href="#" target="_blank" rel="noopener" data-i18n="gh_t">More projects &amp; assignments on GitHub ↗</a></p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="section-num" data-i18n="exp_num">04 / Experience</div><h2 class="section-title" data-i18n-html="exp_title">Where I’ve<br><em>done the work.</em></h2></div>
+
+    <h3 class="subhead" data-i18n="sub_work">Work</h3>
+    <div class="experience reveal">
+      <div><div class="role" data-i18n="e1_role">Junior HR-IT Consultant / Interim Product Owner</div><div class="company">IAV GmbH · Berlin</div><div class="date" data-i18n="e1_date">Apr 2025 — Sep 2026</div></div>
+      <ul>
+        <li data-i18n="e1_a">Served as Interim Product Owner for the Roles &amp; Permissions initiative, coordinating requirements and activities across HR modules and stakeholders.</li>
+        <li data-i18n="e1_e">Coordinated with business and technical stakeholders to clarify requirements, resolve access and workflow issues, and follow up on open topics.</li>
+        <li data-i18n="e1_b">Supported HR and IT teams in administering and optimising SAP SuccessFactors Recruiting, Onboarding and Offboarding.</li>
+        <li data-i18n="e1_c">Translated business requirements into structured technical tasks; configured business rules, workflows and permissions.</li>
+        <li data-i18n="e1_d">Maintained documentation in Jira, Confluence and LeanIX; supported HR reporting with dashboards; identified process issues and drove improvements.</li>
+      </ul>
+    </div>
+    <div class="experience reveal">
+      <div><div class="role" data-i18n="e2_role">Project Manager &amp; Web Developer</div><div class="company">Eventz &amp; Trendz · Dubai</div><div class="date" data-i18n="e2_date">2023 — 2024</div></div>
+      <ul>
+        <li data-i18n="e2_a">Managed projects from initial client requirements through planning, coordination, execution and final delivery.</li>
+        <li data-i18n="e2_b">Acted as the central point of contact between clients, designers, developers, vendors and internal teams, keeping requirements and deliverables aligned.</li>
+        <li data-i18n="e2_c">Gathered stakeholder requirements, translated them into actionable tasks and followed up with responsible teams to ensure timely delivery.</li>
+        <li data-i18n="e2_d">Managed client communication and handled changes, feedback and unexpected issues throughout project execution.</li>
+        <li data-i18n="e2_e">Coordinated technical and creative workstreams, including website development and digital content, and built and maintained websites using web technologies.</li>
+      </ul>
+    </div>
+
+    <h3 class="subhead gap" data-i18n="sub_edu">Education</h3>
+    <div class="experience reveal">
+      <div><div class="role" data-i18n="ed1_role">M.Sc. Computer Science</div><div class="company">IU University · Berlin</div><div class="date" data-i18n="ed1_date">2024 — 2026 · Completed</div></div>
+      <ul>
+        <li data-i18n="ed1_a">Thesis: Concept for an AI-Based Sprint Planning and Burnout Prediction System for Agile Project Management (Python, Explainable AI / SHAP).</li>
+        <li data-i18n="ed1_c">Project: SkillSwap, a platform for exchanging skills between users.</li>
+        <li data-i18n="ed1_b">Selected coursework: Software Engineering: Software Processes · Project: Software Engineering · Project: Computer Science Project · Artificial Intelligence · Big Data Technologies · Cyber Security &amp; Data Protection · Blockchain &amp; Quantum Computing.</li>
+      </ul>
+    </div>
+    <div class="experience reveal">
+      <div><div class="role" data-i18n="ed2_role">B.Sc. Software Engineering</div><div class="company">University of Bolton · RAK</div><div class="date" data-i18n="ed2_date">Sep 2020 — Jun 2023</div></div>
+      <ul>
+        <li data-i18n="ed2_g">Graduated with First Class Honours.</li>
+        <li data-i18n="ed2_b">Thesis: a security system using cryptography and steganography, developed for Pan Gulf (Saudi Arabia).</li>
+        <li data-i18n="ed2_a">Studied Project Management as a subject, including qualitative and quantitative analysis, risk and quality analysis, and system modelling with ERDs, use case diagrams and DFDs.</li>
+        <li data-i18n="ed2_c">Project work: Art Geniuses, a website for art lovers, carried from proposal and feasibility through surveys and interviews, analysis, implementation and testing.</li>
+        <li data-i18n="ed2_cw">Selected coursework: Management &amp; Project Management · Software Development Methodologies · System Design &amp; Engineering · Relational Databases (RDBMS) · Management Information Systems · Strategic Information Systems · Human-Computer Interaction · Networks · Cybersecurity.</li>
+        <li data-i18n="ed2_d">Activities: Computing Society Club; Events &amp; Cultural Coordinator.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="section-num" data-i18n="sk_num">05 / Toolbox</div><h2 class="section-title" data-i18n-html="sk_title">What I bring<br><em>to a team.</em></h2></div>
+    <div class="skillgroups reveal">
+      <div class="sg"><h3 data-i18n="sg1">Project &amp; delivery</h3><div class="skills">
+        <span data-i18n="s1">Project coordination</span><span>Scrum</span><span>Kanban</span><span data-i18n="s2">Requirements gathering</span><span data-i18n="s3">Stakeholder management</span><span data-i18n="s12">Client communication</span><span data-i18n="s4">Risk &amp; change management</span><span data-i18n="s5">Process optimisation</span><span data-i18n="s8">Qualitative &amp; quantitative analysis</span><span>ERD / DFD</span></div></div>
+      <div class="sg"><h3 data-i18n="sg2">Tools &amp; technical</h3><div class="skills">
+        <span>Jira</span><span>Confluence</span><span>Excel</span><span>LeanIX</span><span>SQL</span><span>Python</span><span>SAP SuccessFactors</span><span data-i18n="s10">SAP S/4HANA (learning)</span><span>SAP BTP</span><span>REST APIs</span><span>Git / GitHub</span></div></div>
+      <div class="sg"><h3 data-i18n="sg3">Certifications</h3><div class="skills">
+        <span data-i18n="s7">German B2.1 certificate</span><span data-i18n="s11">SAP S/4HANA course (in progress)</span><span>SAP HCM Solutions</span><span>Zendesk Customer Service</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal"><div class="section-num" data-i18n="com_num">06 / Community</div><h2 class="section-title" data-i18n-html="com_title">Technology is<br><em>a community too.</em></h2></div>
+    <div class="grid">
+      <article class="card small reveal"><span class="tag" data-i18n="c1_tag">Speaker coordination</span><div><h3>GDG</h3><p data-i18n="c1_text">Helped with speaker coordination at Google Developer Group events.</p></div></article>
+      <article class="card small reveal"><span class="tag" data-i18n="c2_tag">Registration</span><div><h3>WeAreDevelopers</h3><p data-i18n="c2_text">Volunteered on attendee registration at the international developer conference, welcoming and checking in participants.</p></div></article>
+      <article class="card small reveal"><span class="tag" data-i18n="c3_tag">Trade fair</span><div><h3>IFA Berlin</h3><p data-i18n="c3_text">Volunteered at IFA, Berlin’s international technology trade fair.</p></div></article>
+      <article class="card small reveal"><span class="tag" data-i18n="c4_tag">Global Forum</span><div><h3>Berlin Global Forum</h3><p data-i18n="c4_text">Selected as a Forum Access Delegate, connecting with an international community across business, technology and society.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-num" data-i18n="ct_num">07 / Let’s talk</div>
+    <h2 data-i18n-html="ct_title">Let’s build something<br><em>that works.</em></h2>
+    <p data-i18n="ct_text">Looking for a project manager or HR-IT consultant who connects business and technology? I’m available to start immediately — I’d love to hear from you.</p>
+    <div class="links" id="links"></div>
+    <p class="note" data-i18n="ref_t">References available on request.</p>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Sana Haryani</span><span data-i18n="foot">Berlin · Germany</span></div></footer>
+
+<script>
+/* ============ EDIT ME ============ */
+const CONFIG = {
+  email:    "haryanisana1@gmail.com",
+  linkedin: "https://linkedin.com/in/sana-haryani",
+  github:   "https://github.com/SanaHaryani",
+  cv:       "cv/Sana-Haryani-CV.pdf",    // button appears automatically once this file exists
+  videos: {
+    en: { src: "videos/sana-en.mp4", captions: "videos/sana-en.vtt" },
+    de: { src: "videos/sana-de.mp4", captions: "videos/sana-de.vtt" }
+  }
+};
+/* ================================= */
+
+/* English lives in the HTML above; only German is listed here. */
+const DE = {
+  skip:"Zum Inhalt springen",
+  nav_about:"Über mich", nav_video:"Video", nav_work:"Projekte", nav_exp:"Erfahrung", nav_contact:"Kontakt",
+  ht_l:"Portfolio · 2026", ht_m:"Berlin · Deutschland", ht_r:"Ab sofort verfügbar",
+  r1:"Projektmanagement", r2:"HR-IT-Beratung", r3:"Operations",
+  lead:"Projektmanagement und HR-IT-Beratung – ich bringe Struktur in komplexe, bereichsübergreifende Vorhaben, von den Anforderungen bis zur Umsetzung, gestützt auf einen M.Sc. in Informatik.",
+  btn_talk:"Kontakt aufnehmen", btn_cv:"Lebenslauf herunterladen",
+  hc_tag:"Intro-Video", hc_title:"Direkt<br><em>von mir.</em>", hc_sub:"Meine Erfahrung – auf Deutsch oder Englisch.",
+  f1k:"Verfügbarkeit", f1v:"Ab sofort", f1s:"Visum zur Arbeitsplatzsuche · Berlin",
+  f2k:"Schwerpunkt", f2v:"Projektmanagement", f2s:"HR-IT · Stakeholder · Bereichsübergreifende Umsetzung",
+  f3k:"Ausbildung", f3v:"M.Sc. Informatik",
+  f4k:"Sprachen", f4v:"Englisch · Deutsch · Hindi", f4s:"Fließend · B2.1 · Muttersprache",
+  about_num:"01 / Über mich",
+  about_title:"Struktur in<br>die <em>Unklarheit.</em>",
+  about_text:"Ich arbeite im <strong>Projektmanagement</strong> an der Schnittstelle von Business und Technologie. Bei IAV habe ich HR-IT-Systeme unterstützt und war <strong>Interim Product Owner</strong> einer bereichsübergreifenden Roles-&-Permissions-Initiative. Davor habe ich <strong>Kundenprojekte</strong> von Anfang bis Ende verantwortet – mit Kunden, Designern, Entwicklern und Lieferanten – aufbauend auf dem Projektmanagement-Fundament meines Bachelor-Studiums. Mit meinem M.Sc. in Informatik verstehe ich sowohl die Business- als auch die Technikseite und mache aus Anforderungen Arbeit, die Teams wirklich umsetzen können.",
+  pl1t:"Klären", pl1p:"Anforderungen aufnehmen, nachfragen und aus Unklarheit einen klaren Scope machen.",
+  pl2t:"Koordinieren", pl2p:"Business, HR, IT, Lieferanten und Kunden auf einer Linie halten – und nachfassen, bis es erledigt ist.",
+  pl3t:"Liefern", pl3p:"Priorisieren, mit Änderungen und kurzfristigen Überraschungen umgehen und klare Dokumentation hinterlassen.",
+  video_num:"02 / In meinen Worten",
+  video_title:"Direkt<br><em>von mir.</em>",
+  video_text:"Ein kurzer Überblick über meine Erfahrung – auf Deutsch oder Englisch. Wählen Sie hier die Sprache oder nutzen Sie den Schalter oben.",
+  soon_t:"Video folgt in Kürze", soon_s:"Ich nehme es gerade auf – schauen Sie bald wieder vorbei.",
+  vtip:"Untertitel, sobald verfügbar",
+  work_num:"03 / Ausgewählte Projekte",
+  work_title:"Projekte, die ich<br><em>verantwortet habe.</em>",
+  sub_prof:"Beruflich",
+  p1_tag:"Interim Product Owner · IAV", p1_title:"Roles-&-Permissions-Initiative",
+  p1_text:"Koordination von Anforderungen und Aktivitäten über HR-Module und Stakeholder hinweg in einer bereichsübergreifenden Initiative – Bedarfe wurden zu strukturierten, umsetzbaren Aufgaben, und jedes offene Thema blieb in Bewegung.",
+  p2_tag:"HR-IT · IAV", p2_title:"Business Process Automation",
+  p2_text:"Analyse von SAP-SuccessFactors-Business-Rule-Prozessen und anschließend Aufbau, Test und Dokumentation von Automatisierungen, die repetitive manuelle Arbeit ersetzen – für mehr Konsistenz und Wartbarkeit.",
+  p3_tag:"Projektmanagement · Eventz & Trendz", p3_title:"Kundenprojekte von A bis Z",
+  p3_text:"Zentrale Ansprechperson zwischen Kunden, Designern, Entwicklern und Lieferanten – von den ersten Anforderungen über Planung bis zur Umsetzung, inklusive Umgang mit Änderungen und Feedback.",
+  a4_tag:"Masterarbeit · KI", a4_title:"KI-basierte Sprint-Planung & Burnout-Prognose",
+  a4_text:"Konzept für ein KI-basiertes System zur Unterstützung von Sprint-Planung und Burnout-Prognose im agilen Projektmanagement, mit Python und Explainable AI (SHAP).",
+  a2_tag:"Projekt · B.Sc.",
+  a3_tag:"Projekt · M.Sc.", a3_text:"Umsetzung von SkillSwap, einer Plattform, auf der Nutzende Fähigkeiten miteinander tauschen – von Analyse und Modellierung bis zur funktionierenden Anwendung.",
+  a1_tag:"Bachelorarbeit · Security", a1_title:"Sicherheitssystem für Pan Gulf",
+  a1_text:"Entwicklung eines Sicherheitssystems mit Kryptografie und Steganografie für Pan Gulf, ein Unternehmen in Saudi-Arabien – umgesetzt als meine Bachelorarbeit.",
+  gh_t:"Weitere Projekte & Aufgaben auf GitHub ↗",
+  exp_num:"04 / Erfahrung",
+  exp_title:"Wo ich<br><em>gearbeitet habe.</em>",
+  sub_work:"Berufserfahrung", sub_edu:"Ausbildung",
+  e1_role:"Junior HR-IT Consultant / Interim Product Owner", e1_date:"Apr. 2025 — Sep. 2026",
+  e1_a:"Interim Product Owner der Roles-&-Permissions-Initiative; Koordination von Anforderungen und Aktivitäten über HR-Module und Stakeholder hinweg.",
+  e1_b:"Unterstützung von HR- und IT-Teams bei Administration und Optimierung von SAP SuccessFactors Recruiting, Onboarding und Offboarding.",
+  e1_c:"Fachliche Anforderungen in strukturierte technische Aufgaben übersetzt; Konfiguration von Business Rules, Workflows und Berechtigungen.",
+  e1_d:"Dokumentation in Jira, Confluence und LeanIX gepflegt; HR-Reporting mit Dashboards unterstützt; Prozessprobleme erkannt und Verbesserungen vorangetrieben.", e2_date:"2023 — 2024",
+  e2_a:"Projekte von den ursprünglichen Kundenanforderungen über Planung und Koordination bis zur Durchführung und Übergabe verantwortet.",
+  e2_b:"Zentrale Ansprechperson für Kunden, Designer, Entwickler, Lieferanten und interne Teams – Anforderungen und Lieferergebnisse im Einklang gehalten.",
+  e2_c:"Stakeholder-Anforderungen aufgenommen, in umsetzbare Aufgaben übersetzt und bei den zuständigen Teams nachgefasst, um termingerechte Lieferung sicherzustellen.",
+  e2_d:"Kundenkommunikation geführt sowie Änderungen, Feedback und unerwartete Probleme während der gesamten Projektumsetzung gemeistert.",
+  ed1_role:"M.Sc. Informatik", ed1_date:"2024 — 2026 · Abgeschlossen",
+  ed1_a:"Masterarbeit: Concept for an AI-Based Sprint Planning and Burnout Prediction System for Agile Project Management (Python, Explainable AI / SHAP).",
+  ed1_c:"Projekt: SkillSwap, eine Plattform zum Austausch von Fähigkeiten zwischen Nutzenden.",
+  ed1_b:"Ausgewählte Module: Software Engineering: Software Processes · Project: Software Engineering · Project: Computer Science Project · Artificial Intelligence · Big Data Technologies · Cyber Security & Data Protection · Blockchain & Quantum Computing.",
+  ed2_role:"B.Sc. Software Engineering", ed2_date:"Sep. 2020 — Juni 2023",
+  ed2_g:"Abschluss mit First Class Honours (beste britische Note).",
+  ed2_cw:"Ausgewählte Module: Management & Projektmanagement · Software-Entwicklungsmethodiken · Systemdesign & Engineering · Relationale Datenbanken (RDBMS) · Management-Informationssysteme · Strategische Informationssysteme · Mensch-Computer-Interaktion · Netzwerke · Cybersecurity.",
+  ed2_b:"Abschlussarbeit: ein Sicherheitssystem mit Kryptografie und Steganografie, entwickelt für Pan Gulf (Saudi-Arabien).",
+  sk_num:"05 / Werkzeugkasten", sk_title:"Was ich in ein<br><em>Team einbringe.</em>",
+  sg1:"Projekt & Delivery", sg2:"Tools & Technik", sg3:"Zertifikate",
+  s1:"Projektkoordination", s2:"Anforderungsanalyse", s3:"Stakeholder-Management", s4:"Risiko- & Change-Management", s5:"Prozessoptimierung", s7:"Deutschzertifikat B2.1", s8:"Qualitative & quantitative Analyse", s10:"SAP S/4HANA (in Weiterbildung)", s11:"SAP-S/4HANA-Kurs (laufend)", s12:"Kundenkommunikation",
+  com_num:"06 / Community", com_title:"Technologie ist<br><em>auch Community.</em>",
+  c1_tag:"Speaker-Koordination", c1_text:"Bei der Koordination von Speakern bei Events der Google Developer Group geholfen.",
+  c2_tag:"Registrierung", c2_text:"Ehrenamtlich bei der Teilnehmerregistrierung der internationalen Entwicklerkonferenz – Teilnehmende begrüßt und eingecheckt.",
+  c3_tag:"Messe", c3_text:"Ehrenamtlich auf der IFA, Berlins internationaler Technologiemesse.",
+  c4_tag:"Global Forum", c4_text:"Als Forum Access Delegate ausgewählt – im Austausch mit einer internationalen Community aus Wirtschaft, Technologie und Gesellschaft.",
+  ct_num:"07 / Lassen Sie uns sprechen",
+  ct_title:"Lassen Sie uns etwas bauen,<br><em>das funktioniert.</em>",
+  ct_text:"Sie suchen Projektmanagement oder HR-IT-Beratung, die Business und Technologie verbindet? Ich kann sofort starten – ich freue mich auf Ihre Nachricht.",
+  ref_t:"Referenzen auf Anfrage verfügbar.",
+  foot:"Berlin · Deutschland",
+  cta:"E-Mail schreiben →",
+  now:"Aktuell: Deutsch",
+  title:"Sana Haryani — Projektmanagement & HR-IT-Beratung",
+  desc:"Sana Haryani – Projektmanagement und HR-IT-Beratung in Berlin. Stakeholder-Management, SAP SuccessFactors, Jira, M.Sc. Informatik. Ab sofort verfügbar.",
+  e1_e:"Abstimmung mit fachlichen und technischen Stakeholdern, um Anforderungen zu klären, Zugriffs- und Workflow-Probleme zu lösen und offene Themen nachzuverfolgen.",
+  e2_role:"Project Manager & Web Developer",
+  e2_e:"Technische und kreative Workstreams koordiniert, darunter Website-Entwicklung und digitale Inhalte; Websites mit Webtechnologien erstellt und gepflegt.",
+  ed2_a:"Projektmanagement als Studienfach, inklusive qualitativer und quantitativer Analyse, Risiko- und Qualitätsanalyse sowie Systemmodellierung mit ERDs, Use-Case-Diagrammen und DFDs.",
+  ed2_c:"Projektarbeit: Art Geniuses, eine Website für Kunstliebhaber, von Antrag und Machbarkeit über Umfragen und Interviews, Analyse, Umsetzung bis zum Testing begleitet.",
+  ed2_d:"Aktivitäten: Computing Society Club; Events & Cultural Coordinator.",
+  sub_msc:"Master · IU University",
+  sub_bsc:"Bachelor · University of Bolton",
+  a2_text:"Eine Website für Kunstliebhaber – von Antrag und Machbarkeit über Umfragen, Interviews und Literaturrecherche, Analyse, Risiko- und Qualitätsbewertung, ERD-, Use-Case- und DFD-Diagramme, Umsetzung und Testing bis zu Empfehlungen für die Zukunft."
+};
+const EN_EXTRA = { cta:"Send an email →", now:"Now showing: English",
+  title:document.title, desc:document.querySelector('meta[name=description]').content };
+
+/* Remember the original English markup */
+const nodes = [...document.querySelectorAll('[data-i18n],[data-i18n-html]')].map(el => ({
+  el, key: el.dataset.i18n || el.dataset.i18nHtml, en: el.innerHTML
+}));
+
+const video = document.getElementById('intro');
+const soon  = document.getElementById('soon');
+const trk   = document.getElementById('trk');
+const vnow  = document.getElementById('vnow');
+let lang = 'en';
+
+function renderLinks(){
+  const L = document.getElementById('links'); L.innerHTML = '';
+  const add = (href, text, cls) => { const a = document.createElement('a'); a.href = href; a.textContent = text; if(cls) a.className = cls; if(/^http/.test(href)){a.target='_blank';a.rel='noopener'} L.appendChild(a); };
+  add('mailto:' + CONFIG.email, lang==='de' ? DE.cta : EN_EXTRA.cta, 'cta');
+  if (CONFIG.linkedin) add(CONFIG.linkedin, 'LinkedIn ↗');
+  if (CONFIG.github)   add(CONFIG.github,   'GitHub ↗');
+}
+
+function loadVideo(){
+  const v = CONFIG.videos[lang];
+  const wasPlaying = !video.paused;
+  video.pause();
+  soon.classList.remove('show');
+  video.src = v.src;
+  trk.src = v.captions; trk.srclang = lang; trk.label = lang==='de' ? 'Deutsch' : 'English';
+  video.load();
+  if (wasPlaying) video.play().catch(()=>{});
+}
+video.addEventListener('error', () => soon.classList.add('show'));
+
+function setLang(next, persist = true){
+  lang = next;
+  document.documentElement.lang = lang;
+  nodes.forEach(n => {
+    const val = lang==='de' ? DE[n.key] : n.en;
+    if (val !== undefined) n.el.innerHTML = val;
+  });
+  document.title = lang==='de' ? DE.title : EN_EXTRA.title;
+  document.querySelector('meta[name=description]').content = lang==='de' ? DE.desc : EN_EXTRA.desc;
+  document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
+  vnow.textContent = lang==='de' ? DE.now : EN_EXTRA.now;
+  renderLinks();
+  loadVideo();
+  if (persist) { try { localStorage.setItem('lang', lang); } catch(e){} }
+}
+
+document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => { if (b.dataset.lang !== lang) setLang(b.dataset.lang); }));
+
+/* Initial language: saved choice → browser language → English */
+let start = 'en';
+if ((navigator.language||'').toLowerCase().startsWith('de')) start = 'de';
+try { const s = localStorage.getItem('lang'); if (s === 'en' || s === 'de') start = s; } catch(e){}
+setLang(start, false);
+
+/* Show the GitHub line only once a GitHub URL is set */
+if (CONFIG.github) { const g = document.getElementById('ghlink'); g.href = CONFIG.github; document.getElementById('ghline').hidden = false; }
+
+/* Show the CV button only if the PDF is actually on the server */
+const cvbtn = document.getElementById('cvbtn');
+cvbtn.href = CONFIG.cv;
+fetch(CONFIG.cv, {method:'HEAD'}).then(r => { if (r.ok) cvbtn.hidden = false; }).catch(()=>{});
+
+/* Reveal on scroll */
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12}) : null;
+document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+</script>
+</body>
+</html>
