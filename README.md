@@ -2,7 +2,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=24&pause=1200&color=171717&center=true&vCenter=true&width=700&lines=Project+Manager+%26+HR-IT+Consultant;Turning+ambiguity+into+a+clear+scope;M.Sc.+Computer+Science+%C2%B7+Berlin;Available+immediately)](https://github.com/SanaHaryani)
 
-🌍 English · Deutsch (B2.1) · हिन्दी
+🌍 English · Deutsch (B2) · हिन्दी
 
 ---
 
