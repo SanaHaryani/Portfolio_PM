@@ -14,7 +14,7 @@
 - 🤝 **Need help with:** nothing a good stakeholder meeting can't fix (and if it can't, I'll follow up until it's done)
 - 🌱 **Learning:** SAP S/4HANA and SAP BTP
 - 💬 **Ask me about:** SAP SuccessFactors, stakeholder wrangling, agile, or why every project needs clear documentation
-- ⚡ **Fun fact:** my master's thesis was about using Explainable AI to predict burnout in sprint planning. Even the sprint board gets a wellness check.
+- ⚡ **Fun fact:** My master's thesis was about using Explainable AI to predict burnout in sprint planning. Even the sprint board gets a wellness check.
 
 ---
 
@@ -25,7 +25,7 @@ My portfolio site has an intro video in **English and German**, my projects, my 
 | | |
 |---|---|
 | 📄 `index.html` | the whole website, with an EN/DE toggle |
-| 🎥 `videos/` | intro videos (`sana-en.mp4`, `sana-de.mp4`) |
+| 🎥 `videos/` | intro videos |
 | 📑 `CV_English.pdf` · `CV_German.pdf` | my CVs |
 
 ---
